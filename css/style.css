@@ -245,3 +245,173 @@
    margin-bottom: 50px;
  }
  
+ /* footer */
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 90px;
+  width: 100%;
+  z-index: 999;
+  background-color: #282828;
+}
+
+.ft {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  height: 100%;
+}
+
+.left, .right {
+  justify-content: center;
+  width: 25%;
+}
+
+.mid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.ft_mid_col {
+  width: 45%;
+}
+
+.vol {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.left img {
+ height: 80%;
+ margin-right: 10px;
+}
+
+.ft_icons_left {
+  display: flex;
+  align-items: center;
+}
+
+.volume_right {
+  height: 5px;
+  border-radius: 10px;
+  background-color: grey;
+  width: 40%;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.volume_right i {
+  position: absolute;
+  top: 28%;
+  left: 83%;
+  display: none;
+}
+
+#play {
+  font-size: 30px;
+}
+
+.volume_mid {
+  height:5px;
+  width: 80%;
+  background-color: gray;
+  margin: 10px auto;
+  cursor: pointer;
+}
+
+.bar_green_hover {
+  height: 5px;
+  width: 25%;
+  background-color: lime;
+  opacity: 0;
+}
+
+.vol:hover .bar_green_hover {
+  opacity: 1;
+}
+
+.volume_mid i {
+  position: absolute;
+  top: 55%;
+  left: 40%;
+  display: none;
+}
+
+.vol_right {
+  width: 70%;
+}
+
+.green_hover {
+  height: 5px;
+  width: 25%;
+  background-color:lime;
+  opacity: 0;
+}
+
+.vol_right:hover .green_hover {
+opacity: 1;
+}
+
+.vol:hover i {
+  display: block;
+}
+
+.vol_right:hover i {
+  display: block;
+}
+
+footer i {
+  color:  #a4a4a4;
+  cursor: pointer;
+}
+
+footer i:hover {
+  transform: scale(1.2);
+  color: white;
+}
+
+/* media */
+
+@media screen and (max-width: 600px) {
+  .main_nav {
+    width: 50px;
+    padding: 0;
+    margin: 0;
+    justify-content: space-between;
+  }
+
+  .main_nav ul {
+    display: none;
+  }
+
+  .hide {
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+  }
+
+   .visible {
+    display: block;
+  }
+
+  .none {
+    display: none;
+  }
+
+  .head_nav a img {
+    width: 70%;
+    margin: 10px auto;
+  }
+  
+  .playlist {
+    display: none;
+  }
